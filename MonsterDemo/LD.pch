@@ -19,6 +19,16 @@
 #define NSLog(...){}
 #endif
 
+#define useSetBgColor
+
+#ifndef useSetBgColor
+#define debugSetBgColor(...){}
+#endif
+
+#ifdef useSetBgColor
+#define debugSetBgColor(a) (a).backgroundColor = kRandomColor;
+#endif
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
 
 
 
