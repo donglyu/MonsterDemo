@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DDTableViewController.h"
 
-@interface FirstTableVC : UITableViewController
+@interface FirstTableVC : DDTableViewController
 
 @end

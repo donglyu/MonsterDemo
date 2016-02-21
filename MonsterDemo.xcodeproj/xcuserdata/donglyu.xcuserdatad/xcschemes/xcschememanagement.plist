@@ -6,13 +6,10 @@
 	<dict>
 		<key>MonsterDemo.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>SettingTableView.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

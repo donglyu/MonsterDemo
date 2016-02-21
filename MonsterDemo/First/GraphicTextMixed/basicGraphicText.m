@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"基本图文混排";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     // 自定义leftBarButtonItem
 //    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"ttt" style:UIBarButtonItemStylePlain target:self action:nil];

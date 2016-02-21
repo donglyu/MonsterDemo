@@ -1,38 +1,52 @@
 //
 //  TestVC01.m
-//  LD
+//  MonsterDemo
 //
-//  Created by lydsnm on 15/11/5.
-//  Copyright © 2015年 lydsnm. All rights reserved.
-//
+//  Created by donglyu on 16/2/20.
+//  Copyright © 2016年 lydsnm. All rights reserved.
+//  http://www.2cto.com/kf/201312/268724.html
 
 #import "TestVC01.h"
-
-@interface TestVC01 ()
-
-@end
+#import "NSObject+HudTipHandler.h"
 
 @implementation TestVC01
 
-- (void)viewDidLoad {
+- (IBAction)buttonClick:(id)sender {
+    [NSObject showHudWithCheckmark:@"checked"];
+    
+    
+}
+NSString *notificationName = @"test";
+- (IBAction)PostNotification:(id)sender {
+
+    NSDictionary *userInfoDict = @{
+                                   @"userName":@"zhangsan",
+                                   @"pwd" : @"123"
+                                   };
+    
+    NSNotification *notification = [NSNotification notificationWithName:notificationName object:nil userInfo:userInfoDict]; // or self.
+    
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:notification object:@"fuck" userInfo:userInfoDict];
+}
+
+- (void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.title = @"Test01测试";
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notice:) name:notificationName object:nil];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)notice:(NSDictionary *)dict{
+    NSLog(@"%@", dict);
+    [NSObject showHudTipStr:@"get the oberser"];
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-*/
+
 
 @end

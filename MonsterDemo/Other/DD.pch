@@ -1,0 +1,120 @@
+//
+//  LD.pch
+//  LD
+//
+//  Created by lydsnm on 15/11/7.
+//  Copyright © 2015年 lydsnm. All rights reserved.
+//
+
+#ifndef LD_pch
+#define LD_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "AppSkin.h"
+#import "UIView+DD.h"
+#import "UIImage+Ext.h"
+#import "NSString+Ext.h"
+#import "UINavigationController+Extension.h"
+#import "UIBarButtonItem+Ext.h"
+
+
+
+
+// 功能
+#ifndef __OPTIMIZE__
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#import "TestVC01.h"
+#define kIsTest 1
+#else
+#define DebugLog(...){}
+#define kIsTest 0
+#endif
+
+//#define useSetBgColor
+
+#ifndef useSetBgColor
+#define debugSetBgColor(...){}
+#endif
+
+#ifdef useSetBgColor
+#define debugSetBgColor(a) (a).backgroundColor = kRandomColor;
+#endif
+
+
+
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+// Color
+#ifndef colorWithRGBA//(r,g,b,a)
+#define colorWithRGBA(r,g,b,a)[UIColor colorWithRed:r green:g blue:b alpha:a]
+#endif
+
+#ifndef kRandomColor
+#define kRandomColor [UIColor colorWithRed:(CGFloat)random()/(CGFloat)RAND_MAX green:(CGFloat)random()/(CGFloat)RAND_MAX blue:(CGFloat)random()/(CGFloat)RAND_MAX alpha:0.7];
+#endif
+
+
+
+
+// 系统版本
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define COMPARE_SYSTEM_VERSION(v)    ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch])
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  (COMPARE_SYSTEM_VERSION(v) == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              (COMPARE_SYSTEM_VERSION(v) == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  (COMPARE_SYSTEM_VERSION(v) != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 (COMPARE_SYSTEM_VERSION(v) == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     (COMPARE_SYSTEM_VERSION(v) != NSOrderedDescending)
+
+#ifndef kSystemVersion
+#define kSystemVersion LDDeviceSystemVersion()
+#endif
+#ifndef kiOS6Later
+#define kiOS6Later (kSystemVersion >= 6)
+#endif
+
+#ifndef kiOS7Later
+#define kiOS7Later (kSystemVersion >= 7)
+#endif
+
+#ifndef kiOS8Later
+#define kiOS8Later (kSystemVersion >= 8)
+#endif
+
+#ifndef kiOS9Later
+#define kiOS9Later (kSystemVersion >= 9)
+#endif
+
+
+
+// 便捷方法
+//contentOfFile方式加载图片
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:［NSBundle mainBundle]pathForResource:file ofType:ext］
+//定义UIImage对象
+#define IMAGE(A) [UIImage imageWithContentsOfFile:［NSBundle mainBundle] pathForResource:A ofType:nil］
+
+#define kNAVI_BAR_HEIGHT    (self.navigationController.navigationBar.bounds.size.height)
+#define kSTATUS_BAR_HEIGHT  (MIN([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication sharedApplication].statusBarFrame.size.height))
+
+// 屏幕相关属性
+#ifndef kScreenWidth
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#endif
+
+#ifndef kScreenHeight
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#endif
+
+
+
+
+
+
+
+#endif /* LD_pch */
