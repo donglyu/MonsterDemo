@@ -45,22 +45,26 @@
     if (!badgeValue || badgeValue.length == 0) {
         return CGSizeZero;
     }
-    if (!font) {
-        if (kDevice_Is_iPhone6 || kDevice_Is_iPhone6Plus) {
-            font = [UIFont systemFontOfSize:12];
-        }else{
-            font = [UIFont systemFontOfSize:11];
-        }
-    }
-    CGSize badgeSize = [badgeValue getSizeWithFont:font constrainedToSize:CGSizeMake(kMaxBadgeWith, 20)];
+//    if (!font) {
+//        if (kDevice_Is_iPhone6 || kDevice_Is_iPhone6Plus) {
+//            font = [UIFont systemFontOfSize:12];
+//        }else{
+//            font = [UIFont systemFontOfSize:11];
+//        }
+//    }
+//    CGSize badgeSize = [badgeValue getSizeWithFont:font constrainedToSize:CGSizeMake(kMaxBadgeWith, 20)];
+//    
+//    if (badgeSize.width < badgeSize.height) {
+//        badgeSize = CGSizeMake(badgeSize.height, badgeSize.height);
+//    }
+//    if ([badgeValue isEqualToString:kBadgeTipStr]) {
+//        badgeSize = CGSizeMake(4, 4);
+//    }
+//    return badgeSize;
     
-    if (badgeSize.width < badgeSize.height) {
-        badgeSize = CGSizeMake(badgeSize.height, badgeSize.height);
-    }
-    if ([badgeValue isEqualToString:kBadgeTipStr]) {
-        badgeSize = CGSizeMake(4, 4);
-    }
-    return badgeSize;
+    // justFortemp
+    return CGSizeMake(2, 2);
+
 }
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -116,27 +120,27 @@
         CGRect badgeBackgroundPaddingFrame = CGRectMake(0, 0, badgeBackgroundFrame.size.width +2*kBadgePading, badgeBackgroundFrame.size.height +2*kBadgePading);
         
         if ([self badgeBackgroundColor]) {
-            if (![self.badgeValue isEqualToString:kBadgeTipStr]) {//外白色描边
-                CGContextSetFillColorWithColor(context, [[UIColor whiteColor] CGColor]);
-
-                if (badgeSize.width > badgeSize.height) {
-                    CGFloat circleWith = badgeBackgroundPaddingFrame.size.height;
-                    CGFloat totalWidth = badgeBackgroundPaddingFrame.size.width;
-                    CGFloat diffWidth = totalWidth - circleWith;
-                    CGPoint originPoint = badgeBackgroundPaddingFrame.origin;
-                    
-                    
-                    CGRect leftCicleFrame = CGRectMake(originPoint.x, originPoint.y, circleWith, circleWith);
-                    CGRect centerFrame = CGRectMake(originPoint.x +circleWith/2, originPoint.y, diffWidth, circleWith);
-                    CGRect rightCicleFrame = CGRectMake(originPoint.x +(totalWidth - circleWith), originPoint.y, circleWith, circleWith);
-                    CGContextFillEllipseInRect(context, leftCicleFrame);
-                    CGContextFillRect(context, centerFrame);
-                    CGContextFillEllipseInRect(context, rightCicleFrame);
-
-                }else{
-                    CGContextFillEllipseInRect(context, badgeBackgroundPaddingFrame);
-                }
-            }
+//            if (![self.badgeValue isEqualToString:kBadgeTipStr]) {//外白色描边
+//                CGContextSetFillColorWithColor(context, [[UIColor whiteColor] CGColor]);
+//
+//                if (badgeSize.width > badgeSize.height) {
+//                    CGFloat circleWith = badgeBackgroundPaddingFrame.size.height;
+//                    CGFloat totalWidth = badgeBackgroundPaddingFrame.size.width;
+//                    CGFloat diffWidth = totalWidth - circleWith;
+//                    CGPoint originPoint = badgeBackgroundPaddingFrame.origin;
+//                    
+//                    
+//                    CGRect leftCicleFrame = CGRectMake(originPoint.x, originPoint.y, circleWith, circleWith);
+//                    CGRect centerFrame = CGRectMake(originPoint.x +circleWith/2, originPoint.y, diffWidth, circleWith);
+//                    CGRect rightCicleFrame = CGRectMake(originPoint.x +(totalWidth - circleWith), originPoint.y, circleWith, circleWith);
+//                    CGContextFillEllipseInRect(context, leftCicleFrame);
+//                    CGContextFillRect(context, centerFrame);
+//                    CGContextFillEllipseInRect(context, rightCicleFrame);
+//
+//                }else{
+//                    CGContextFillEllipseInRect(context, badgeBackgroundPaddingFrame);
+//                }
+//            }
 //            badge背景色
             CGContextSetFillColorWithColor(context, [[self badgeBackgroundColor] CGColor]);
             if (badgeSize.width > badgeSize.height) {
@@ -158,24 +162,24 @@
         }
         
         //badgeValue
-        if (![self.badgeValue isEqualToString:kBadgeTipStr]) {
-            CGContextSetFillColorWithColor(context, [[self badgeTextColor] CGColor]);
-
-            NSMutableParagraphStyle *badgeTextStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
-            [badgeTextStyle setLineBreakMode:NSLineBreakByWordWrapping];
-            [badgeTextStyle setAlignment:NSTextAlignmentCenter];
-            
-            NSDictionary *badgeTextAttributes = @{
-                                                  NSFontAttributeName: [self badgeTextFont],
-                                                  NSForegroundColorAttributeName: [self badgeTextColor],
-                                                  NSParagraphStyleAttributeName: badgeTextStyle,
-                                                  };
-            
-            [[self badgeValue] drawInRect:CGRectMake(CGRectGetMinX(badgeBackgroundFrame) + kBadgeTextOffset,
-                                                     CGRectGetMinY(badgeBackgroundFrame) + kBadgeTextOffset,
-                                                     badgeSize.width, badgeSize.height)
-                           withAttributes:badgeTextAttributes];
-        }
+//        if (![self.badgeValue isEqualToString:kBadgeTipStr]) {
+//            CGContextSetFillColorWithColor(context, [[self badgeTextColor] CGColor]);
+//
+//            NSMutableParagraphStyle *badgeTextStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+//            [badgeTextStyle setLineBreakMode:NSLineBreakByWordWrapping];
+//            [badgeTextStyle setAlignment:NSTextAlignmentCenter];
+//            
+//            NSDictionary *badgeTextAttributes = @{
+//                                                  NSFontAttributeName: [self badgeTextFont],
+//                                                  NSForegroundColorAttributeName: [self badgeTextColor],
+//                                                  NSParagraphStyleAttributeName: badgeTextStyle,
+//                                                  };
+//            
+//            [[self badgeValue] drawInRect:CGRectMake(CGRectGetMinX(badgeBackgroundFrame) + kBadgeTextOffset,
+//                                                     CGRectGetMinY(badgeBackgroundFrame) + kBadgeTextOffset,
+//                                                     badgeSize.width, badgeSize.height)
+//                           withAttributes:badgeTextAttributes];
+//        }
     }
     CGContextRestoreGState(context);
 }

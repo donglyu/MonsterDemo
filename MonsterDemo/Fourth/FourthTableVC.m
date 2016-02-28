@@ -13,13 +13,15 @@
 
 @end
 
-@implementation FourthTableVC
+@implementation FourthTableVC{
+    BOOL _hasData;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithBtnTitle:@"关于" target:self action:nil];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithBtnTitle:@"有无数据设置" target:self action:@selector(rightNaviBarItemTapped)];
     
     [self addObjectWithTitle:@"临时实验" DestinationVCName:@"TestVC01"];
     [self addObjectWithTitle:@"临时实验2" DestinationVCName:@"TestVC02"];
@@ -31,6 +33,13 @@
     
     
 }
+
+
+- (void)rightNaviBarItemTapped{
+        [self.view configBlankPage:DDBlankPageViewNomalNoData hasData:!_hasData hasError:NO];
+        _hasData = !_hasData;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
