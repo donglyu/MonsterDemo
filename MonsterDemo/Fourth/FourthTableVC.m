@@ -7,6 +7,7 @@
 //
 
 #import "FourthTableVC.h"
+#import "UIView+Common.h"
 
 @interface FourthTableVC ()
 
@@ -17,9 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithBtnTitle:@"关于" target:self action:nil];
     
     [self addObjectWithTitle:@"临时实验" DestinationVCName:@"TestVC01"];
+    [self addObjectWithTitle:@"临时实验2" DestinationVCName:@"TestVC02"];
+    [self addObjectWithTitle:@"scrollView内容截图" DestinationVCName:@"ScreenShootScrollView"];
+    self.tableView.tableFooterView = [UIView new];
+    
+    
+    [self.view configBlankPage:DDBlankPageViewNomalNoData hasData:NO hasError:NO];
+    
     
 }
 

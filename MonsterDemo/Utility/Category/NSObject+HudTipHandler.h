@@ -13,5 +13,5 @@
 + (BOOL)showError:(NSError *)error;
 + (void)showHudTipStr:(NSString *)tipStr;
 
-+ (void)showHudWithCheckmark:(NSString*)hubString;
++ (void)showHudWithCheckmark:(NSString*)hubString WithCompleteBlock:(void(^)())block;
 @end

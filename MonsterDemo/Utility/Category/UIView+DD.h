@@ -20,7 +20,7 @@
 @property (nonatomic, assign) CGPoint origin;
 
 - (void)drawLineAroundView;
-
+- (UIImage*)captureView:(UIView *)theView;
 @end
 
 float DDDeviceSystemVersion();

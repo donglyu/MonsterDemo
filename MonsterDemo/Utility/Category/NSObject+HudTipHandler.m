@@ -59,7 +59,7 @@
     }
 }
 
-+ (void)showHudWithCheckmark:(NSString*)hubString{
++ (void)showHudWithCheckmark:(NSString*)hubString WithCompleteBlock:(void(^)())block{
 //    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
 //    [self.navigationController.view addSubview:hud];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:kKeyWindow animated:YES];
@@ -74,8 +74,15 @@
 //    HUD.delegate = self;
     hud.labelText = hubString;
     
-    [hud show:YES];
-    [hud hide:YES afterDelay:2];
+    [hud showAnimated:YES whileExecutingBlock:^{
+        sleep(1);
+        if (block) {
+            block();
+        }
+    } completionBlock:^{
+
+    }];
+
 
 }
 @end

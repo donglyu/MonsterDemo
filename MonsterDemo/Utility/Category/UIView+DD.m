@@ -108,6 +108,8 @@
     return self.frame.origin;
 }
 
+
+
 // 画View四周的虚线
 - (void)drawLineAroundView{
     //    NSLog(@"%@", showView.center);
@@ -137,6 +139,21 @@
     // 将layer添加进图层
     [self.layer addSublayer:layer];
     CGPathRelease(pathRef);
+}
+
+
+- (UIImage*)captureView:(UIView *)theView{
+    CGRect rect = theView.frame;
+    if ([theView isKindOfClass:[UIScrollView class]]) {
+        rect.size = ((UIScrollView *)theView).contentSize;
+    }
+    
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [theView.layer renderInContext:context];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 @end
@@ -174,6 +191,7 @@ CGRect DDDeviceScreenBounds(){
     });
     return screenBounds;
 }
+
 
 
 

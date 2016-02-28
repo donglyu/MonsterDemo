@@ -4,9 +4,12 @@
 //
 //  Created by donglyu on 16/2/21.
 //  Copyright © 2016年 lydsnm. All rights reserved.
-//
+//  http://www.lvtao.net/ios/ios-keychain.html
 
 #import "keychainTest.h"
+#import "SFHFKeychainUtils.h"
+
+#define kKeyChainSeviceName @"DDStoreKit"
 
 @interface keychainTest ()
 
@@ -17,15 +20,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString * const KEY_USERNAME = @"com.company.app.username";
-    NSString * const KEY_PASSWORD = @"com.company.app.password";
     
+
+    
+}
+
+
+
+#pragma mark - Use SFHFKeychainUtils
+- (IBAction)storeUserInfo:(id)sender {
+
+    NSString *objectString = @"test.....kkkkkkey";
+    NSError *error;
+    [SFHFKeychainUtils storeUsername:@"dd" andPassword:objectString forServiceName:kKeyChainSeviceName updateExisting:YES error:&error];
+    DebugLog(@"store 完成");
+}
+
+- (IBAction)getUserInfo:(id)sender {
+
+    NSError *error;
+    NSString *pwd = [SFHFKeychainUtils getPasswordForUsername:@"dd" andServiceName:kKeyChainSeviceName error:&error];
+    if (error) {
+        DebugLog(@"error:%@ %@", error, error.localizedDescription);
+    }
+    
+    DebugLog(@"pwd: %@", pwd);
     
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

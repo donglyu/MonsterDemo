@@ -22,11 +22,13 @@
 		700A46911C787388004F2E72 /* NSObject+HudTipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 700A46901C787388004F2E72 /* NSObject+HudTipHandler.m */; };
 		700A46971C7878E6004F2E72 /* TestVC01.m in Sources */ = {isa = PBXBuildFile; fileRef = 700A46961C7878E6004F2E72 /* TestVC01.m */; };
 		700A46991C7878F8004F2E72 /* TestVC01.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700A46981C7878F8004F2E72 /* TestVC01.xib */; };
+		70131AE51C82DD64001F51D7 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 70131AE41C82DD64001F51D7 /* UIView+Common.m */; };
+		70131AEC1C82DDF1001F51D7 /* ScreenShootScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70131AEB1C82DDF1001F51D7 /* ScreenShootScrollView.m */; };
+		70131AEF1C832C82001F51D7 /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70131AEE1C832C82001F51D7 /* UIBadgeView.m */; };
 		701345731C70B809007FCB76 /* AppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 701345721C70B809007FCB76 /* AppTool.m */; };
 		703CB0471C7965A200589DA0 /* DDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB0461C7965A200589DA0 /* DDTextField.m */; };
 		703CB04D1C7A019000589DA0 /* StoreCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB04C1C7A019000589DA0 /* StoreCenter.m */; };
 		703CB0511C7A01D800589DA0 /* keychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB0501C7A01D800589DA0 /* keychainTest.m */; };
-		703CB0551C7A022F00589DA0 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB0541C7A022F00589DA0 /* SFHFKeychainUtils.m */; };
 		703CB0571C7A042F00589DA0 /* keychainTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703CB0561C7A042F00589DA0 /* keychainTest.xib */; };
 		7060D7191C5BBF5000EF0703 /* TestVC02.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060D7171C5BBF5000EF0703 /* TestVC02.m */; };
 		7060D71D1C5BBF8A00EF0703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060D71C1C5BBF8A00EF0703 /* AppDelegate.m */; };
@@ -46,6 +48,9 @@
 		70735D001C60EE3200614A19 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 70735CFE1C60EE3200614A19 /* NSString+Ext.m */; };
 		70735D031C60F87900614A19 /* TestVC02.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7060D7181C5BBF5000EF0703 /* TestVC02.xib */; };
 		70735D0D1C610B0500614A19 /* DDMenuTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70735D0C1C610B0500614A19 /* DDMenuTableVC.m */; };
+		7075E3371C81DB8500C680E0 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075E3361C81DB8500C680E0 /* SFHFKeychainUtils.m */; };
+		7075E3401C81E4BE00C680E0 /* UIScrollView+DD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075E33F1C81E4BE00C680E0 /* UIScrollView+DD.m */; };
+		7075E3431C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075E3421C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		708509021C56746C0039E403 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 708508F91C56746C0039E403 /* NSArray+Log.m */; };
 		708509031C56746C0039E403 /* NSDate+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 708508FB1C56746C0039E403 /* NSDate+Ext.m */; };
 		708509041C56746C0039E403 /* UIBarButtonItem+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 708508FD1C56746C0039E403 /* UIBarButtonItem+Ext.m */; };
@@ -89,6 +94,12 @@
 		700A46951C7878E6004F2E72 /* TestVC01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC01.h; sourceTree = "<group>"; };
 		700A46961C7878E6004F2E72 /* TestVC01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC01.m; sourceTree = "<group>"; };
 		700A46981C7878F8004F2E72 /* TestVC01.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestVC01.xib; sourceTree = "<group>"; };
+		70131AE31C82DD64001F51D7 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		70131AE41C82DD64001F51D7 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		70131AEA1C82DDF1001F51D7 /* ScreenShootScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShootScrollView.h; sourceTree = "<group>"; };
+		70131AEB1C82DDF1001F51D7 /* ScreenShootScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShootScrollView.m; sourceTree = "<group>"; };
+		70131AED1C832C82001F51D7 /* UIBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBadgeView.h; sourceTree = "<group>"; };
+		70131AEE1C832C82001F51D7 /* UIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBadgeView.m; sourceTree = "<group>"; };
 		701345711C70B809007FCB76 /* AppTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTool.h; sourceTree = "<group>"; };
 		701345721C70B809007FCB76 /* AppTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTool.m; sourceTree = "<group>"; };
 		703CB0451C7965A200589DA0 /* DDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTextField.h; sourceTree = "<group>"; };
@@ -97,8 +108,6 @@
 		703CB04C1C7A019000589DA0 /* StoreCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreCenter.m; sourceTree = "<group>"; };
 		703CB04F1C7A01D800589DA0 /* keychainTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keychainTest.h; sourceTree = "<group>"; };
 		703CB0501C7A01D800589DA0 /* keychainTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keychainTest.m; sourceTree = "<group>"; };
-		703CB0531C7A022F00589DA0 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		703CB0541C7A022F00589DA0 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 		703CB0561C7A042F00589DA0 /* keychainTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = keychainTest.xib; sourceTree = "<group>"; };
 		7060D7161C5BBF5000EF0703 /* TestVC02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC02.h; sourceTree = "<group>"; };
 		7060D7171C5BBF5000EF0703 /* TestVC02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC02.m; sourceTree = "<group>"; };
@@ -136,6 +145,12 @@
 		70735CFF1C60EE3200614A19 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
 		70735D0B1C610B0500614A19 /* DDMenuTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuTableVC.h; sourceTree = "<group>"; };
 		70735D0C1C610B0500614A19 /* DDMenuTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuTableVC.m; sourceTree = "<group>"; };
+		7075E3351C81DB8500C680E0 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		7075E3361C81DB8500C680E0 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		7075E33E1C81E4BE00C680E0 /* UIScrollView+DD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DD.h"; sourceTree = "<group>"; };
+		7075E33F1C81E4BE00C680E0 /* UIScrollView+DD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DD.m"; sourceTree = "<group>"; };
+		7075E3411C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		7075E3421C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		708508F81C56746C0039E403 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		708508F91C56746C0039E403 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		708508FA1C56746C0039E403 /* NSDate+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ext.h"; sourceTree = "<group>"; };
@@ -223,6 +238,15 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		70131AE61C82DD99001F51D7 /* ScreenShoot */ = {
+			isa = PBXGroup;
+			children = (
+				70131AEA1C82DDF1001F51D7 /* ScreenShootScrollView.h */,
+				70131AEB1C82DDF1001F51D7 /* ScreenShootScrollView.m */,
+			);
+			path = ScreenShoot;
+			sourceTree = "<group>";
+		};
 		703CB04A1C7A016500589DA0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +271,8 @@
 		703CB0521C7A021A00589DA0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				703CB0531C7A022F00589DA0 /* SFHFKeychainUtils.h */,
-				703CB0541C7A022F00589DA0 /* SFHFKeychainUtils.m */,
+				7075E3351C81DB8500C680E0 /* SFHFKeychainUtils.h */,
+				7075E3361C81DB8500C680E0 /* SFHFKeychainUtils.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -294,6 +318,7 @@
 		706CBD6E1C625AB60074F240 /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
+				70131AE61C82DD99001F51D7 /* ScreenShoot */,
 				706CBD6F1C625AD70074F240 /* FourthTableVC.h */,
 				706CBD701C625AD70074F240 /* FourthTableVC.m */,
 			);
@@ -307,6 +332,8 @@
 				706CBD741C625EDC0074F240 /* DDTableViewController.m */,
 				703CB0451C7965A200589DA0 /* DDTextField.h */,
 				703CB0461C7965A200589DA0 /* DDTextField.m */,
+				70131AED1C832C82001F51D7 /* UIBadgeView.h */,
+				70131AEE1C832C82001F51D7 /* UIBadgeView.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -329,6 +356,8 @@
 				70735CF91C60ED2700614A19 /* UIButton+Extension.m */,
 				70735CF51C60ED1700614A19 /* UINavigationController+Extension.h */,
 				70735CF61C60ED1700614A19 /* UINavigationController+Extension.m */,
+				7075E3411C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.h */,
+				7075E3421C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.m */,
 				70735CF21C60ED0400614A19 /* NSTimer+Extension.h */,
 				70735CF31C60ED0400614A19 /* NSTimer+Extension.m */,
 				708508F81C56746C0039E403 /* NSArray+Log.h */,
@@ -349,6 +378,10 @@
 				70735CFC1C60ED5C00614A19 /* UIViewController+Ext.m */,
 				700A468F1C787388004F2E72 /* NSObject+HudTipHandler.h */,
 				700A46901C787388004F2E72 /* NSObject+HudTipHandler.m */,
+				7075E33E1C81E4BE00C680E0 /* UIScrollView+DD.h */,
+				7075E33F1C81E4BE00C680E0 /* UIScrollView+DD.m */,
+				70131AE31C82DD64001F51D7 /* UIView+Common.h */,
+				70131AE41C82DD64001F51D7 /* UIView+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -466,9 +499,9 @@
 			children = (
 				7060D71B1C5BBF8A00EF0703 /* AppDelegate.h */,
 				7060D71C1C5BBF8A00EF0703 /* AppDelegate.m */,
+				7060D71F1C5BBFB500EF0703 /* DD.pch */,
 				7060D7151C5BBF0D00EF0703 /* images */,
 				7060D71E1C5BBFB500EF0703 /* Info.plist */,
-				7060D71F1C5BBFB500EF0703 /* DD.pch */,
 				C552E0331BEE6500006453CC /* LaunchScreen.storyboard */,
 				7060D7221C5BC05C00EF0703 /* main.m */,
 			);
@@ -592,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70131AEF1C832C82001F51D7 /* UIBadgeView.m in Sources */,
 				7060D7231C5BC05C00EF0703 /* main.m in Sources */,
 				706CBD6D1C6257FE0074F240 /* ThirdTableVC.m in Sources */,
 				700A46971C7878E6004F2E72 /* TestVC01.m in Sources */,
@@ -603,13 +637,15 @@
 				70735CFD1C60ED5C00614A19 /* UIViewController+Ext.m in Sources */,
 				708509051C56746C0039E403 /* UIImage+Ext.m in Sources */,
 				7060D71D1C5BBF8A00EF0703 /* AppDelegate.m in Sources */,
+				7075E3401C81E4BE00C680E0 /* UIScrollView+DD.m in Sources */,
 				70735CFA1C60ED2700614A19 /* UIButton+Extension.m in Sources */,
 				70854D271C5D1C7400B1DA26 /* UIColor+Ext.m in Sources */,
-				703CB0551C7A022F00589DA0 /* SFHFKeychainUtils.m in Sources */,
+				7075E3371C81DB8500C680E0 /* SFHFKeychainUtils.m in Sources */,
 				70735CF41C60ED0400614A19 /* NSTimer+Extension.m in Sources */,
 				C552E0551BEE6500006453CC /* GraphicTextMixedViewController.m in Sources */,
 				70854D241C5D188200B1DA26 /* AppSkin.m in Sources */,
 				700A467B1C78646A004F2E72 /* HUDPOPTableViewController.m in Sources */,
+				70131AE51C82DD64001F51D7 /* UIView+Common.m in Sources */,
 				703CB0471C7965A200589DA0 /* DDTextField.m in Sources */,
 				70735CF71C60ED1700614A19 /* UINavigationController+Extension.m in Sources */,
 				703CB04D1C7A019000589DA0 /* StoreCenter.m in Sources */,
@@ -628,7 +664,9 @@
 				708509041C56746C0039E403 /* UIBarButtonItem+Ext.m in Sources */,
 				70735D001C60EE3200614A19 /* NSString+Ext.m in Sources */,
 				706CBD751C625EDC0074F240 /* DDTableViewController.m in Sources */,
+				7075E3431C81E8A900C680E0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				70735CF11C60E9AE00614A19 /* VideoTool.m in Sources */,
+				70131AEC1C82DDF1001F51D7 /* ScreenShootScrollView.m in Sources */,
 				706CBD781C625F6B0074F240 /* UIBarButtonItem+Badge.m in Sources */,
 				700A46831C7867CB004F2E72 /* MBProgressHUDViewController.m in Sources */,
 				700A46751C783B98004F2E72 /* XibUseView.m in Sources */,
@@ -667,6 +705,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyds.MonsterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -691,6 +730,7 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyds.MonsterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
