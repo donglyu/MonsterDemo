@@ -26,6 +26,7 @@
 		70131AEC1C82DDF1001F51D7 /* ScreenShootScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70131AEB1C82DDF1001F51D7 /* ScreenShootScrollView.m */; };
 		70131AEF1C832C82001F51D7 /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70131AEE1C832C82001F51D7 /* UIBadgeView.m */; };
 		701345731C70B809007FCB76 /* AppTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 701345721C70B809007FCB76 /* AppTool.m */; };
+		7014E31F1C8499B500505F54 /* PasswordInputWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7014E31E1C8499B500505F54 /* PasswordInputWindow.m */; };
 		703CB0471C7965A200589DA0 /* DDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB0461C7965A200589DA0 /* DDTextField.m */; };
 		703CB04D1C7A019000589DA0 /* StoreCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB04C1C7A019000589DA0 /* StoreCenter.m */; };
 		703CB0511C7A01D800589DA0 /* keychainTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CB0501C7A01D800589DA0 /* keychainTest.m */; };
@@ -102,6 +103,8 @@
 		70131AEE1C832C82001F51D7 /* UIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBadgeView.m; sourceTree = "<group>"; };
 		701345711C70B809007FCB76 /* AppTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTool.h; sourceTree = "<group>"; };
 		701345721C70B809007FCB76 /* AppTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTool.m; sourceTree = "<group>"; };
+		7014E31D1C8499B500505F54 /* PasswordInputWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordInputWindow.h; sourceTree = "<group>"; };
+		7014E31E1C8499B500505F54 /* PasswordInputWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordInputWindow.m; sourceTree = "<group>"; };
 		703CB0451C7965A200589DA0 /* DDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTextField.h; sourceTree = "<group>"; };
 		703CB0461C7965A200589DA0 /* DDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTextField.m; sourceTree = "<group>"; };
 		703CB04B1C7A019000589DA0 /* StoreCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreCenter.h; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 				703CB0461C7965A200589DA0 /* DDTextField.m */,
 				70131AED1C832C82001F51D7 /* UIBadgeView.h */,
 				70131AEE1C832C82001F51D7 /* UIBadgeView.m */,
+				7014E31D1C8499B500505F54 /* PasswordInputWindow.h */,
+				7014E31E1C8499B500505F54 /* PasswordInputWindow.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -654,6 +659,7 @@
 				708509021C56746C0039E403 /* NSArray+Log.m in Sources */,
 				708509061C56746C0039E403 /* UIView+DD.m in Sources */,
 				708509031C56746C0039E403 /* NSDate+Ext.m in Sources */,
+				7014E31F1C8499B500505F54 /* PasswordInputWindow.m in Sources */,
 				700A46911C787388004F2E72 /* NSObject+HudTipHandler.m in Sources */,
 				C552E0541BEE6500006453CC /* basicGraphicText.m in Sources */,
 				7060D72A1C5BC13D00EF0703 /* BaseNavcVC.m in Sources */,

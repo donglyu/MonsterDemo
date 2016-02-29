@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithBtnTitle:@"有无数据设置" target:self action:@selector(rightNaviBarItemTapped)];
+    self.navigationItem. rightBarButtonItem = [UIBarButtonItem itemWithBtnTitle:@"有无数据设置" target:self action:@selector(rightNaviBarItemTapped)];
     
     [self addObjectWithTitle:@"临时实验" DestinationVCName:@"TestVC01"];
     [self addObjectWithTitle:@"临时实验2" DestinationVCName:@"TestVC02"];
