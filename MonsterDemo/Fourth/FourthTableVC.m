@@ -29,7 +29,7 @@
     self.tableView.tableFooterView = [UIView new];
     
     
-    [self.view configBlankPage:DDBlankPageViewNomalNoData hasData:NO hasError:NO];
+    [self.view configBlankPage:DDBlankPageViewNomalNoData hasData:YES hasError:NO];
     
     
 }

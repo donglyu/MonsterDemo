@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *gradientLayerTestView;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorView;
-
 @property (weak, nonatomic) IBOutlet UITextView *testTextView;
 @end
 

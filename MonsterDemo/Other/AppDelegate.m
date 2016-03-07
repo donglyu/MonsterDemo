@@ -26,6 +26,7 @@
     MainVC *tbVC = [[MainVC alloc] init];
 //    NavcViewController *Navc = [[NavcViewController alloc] initWithRootViewController:tbVC];
     
+    
     self.window.rootViewController = tbVC;
     tbVC.view.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

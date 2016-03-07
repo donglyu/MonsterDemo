@@ -14,4 +14,7 @@
 + (UIFont *)appBoldFontWithSize:(CGFloat)size;
 
 + (UIColor*)commonBtnColorWithLightRed;
+
+/** 栀子色*/
++ (UIColor *)commonThemeColor;
 @end

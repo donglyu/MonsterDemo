@@ -59,6 +59,8 @@
 		708509061C56746C0039E403 /* UIView+DD.m in Sources */ = {isa = PBXBuildFile; fileRef = 708509011C56746C0039E403 /* UIView+DD.m */; };
 		70854D241C5D188200B1DA26 /* AppSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70854D231C5D188200B1DA26 /* AppSkin.m */; };
 		70854D271C5D1C7400B1DA26 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 70854D261C5D1C7400B1DA26 /* UIColor+Ext.m */; };
+		70BA02351C8DD34000C3A186 /* ActivityIndicatorBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA02321C8DD34000C3A186 /* ActivityIndicatorBtnView.m */; };
+		70BA02361C8DD34000C3A186 /* DAReloadActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA02341C8DD34000C3A186 /* DAReloadActivityButton.m */; };
 		70BE95281C74BE430024D23F /* WindowLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BE95261C74BE430024D23F /* WindowLevelViewController.m */; };
 		70BE95291C74BE430024D23F /* WindowLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE95271C74BE430024D23F /* WindowLevelViewController.xib */; };
 		C552E04F1BEE6500006453CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C552E0321BEE6500006453CC /* Assets.xcassets */; };
@@ -168,6 +170,10 @@
 		70854D231C5D188200B1DA26 /* AppSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSkin.m; sourceTree = "<group>"; };
 		70854D251C5D1C7400B1DA26 /* UIColor+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
 		70854D261C5D1C7400B1DA26 /* UIColor+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
+		70BA02311C8DD34000C3A186 /* ActivityIndicatorBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorBtnView.h; sourceTree = "<group>"; };
+		70BA02321C8DD34000C3A186 /* ActivityIndicatorBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorBtnView.m; sourceTree = "<group>"; };
+		70BA02331C8DD34000C3A186 /* DAReloadActivityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAReloadActivityButton.h; sourceTree = "<group>"; };
+		70BA02341C8DD34000C3A186 /* DAReloadActivityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAReloadActivityButton.m; sourceTree = "<group>"; };
 		70BE95251C74BE430024D23F /* WindowLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowLevelViewController.h; sourceTree = "<group>"; };
 		70BE95261C74BE430024D23F /* WindowLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowLevelViewController.m; sourceTree = "<group>"; };
 		70BE95271C74BE430024D23F /* WindowLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowLevelViewController.xib; sourceTree = "<group>"; };
@@ -321,6 +327,7 @@
 		706CBD6E1C625AB60074F240 /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
+				708ACE651C8C2F77006B3763 /* Views */,
 				70131AE61C82DD99001F51D7 /* ScreenShoot */,
 				706CBD6F1C625AD70074F240 /* FourthTableVC.h */,
 				706CBD701C625AD70074F240 /* FourthTableVC.m */,
@@ -406,6 +413,24 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		708ACE651C8C2F77006B3763 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70BA02301C8DD33100C3A186 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70BA02311C8DD34000C3A186 /* ActivityIndicatorBtnView.h */,
+				70BA02321C8DD34000C3A186 /* ActivityIndicatorBtnView.m */,
+				70BA02331C8DD34000C3A186 /* DAReloadActivityButton.h */,
+				70BA02341C8DD34000C3A186 /* DAReloadActivityButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		70BE95241C74BDFA0024D23F /* UIWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +514,7 @@
 		C552E04A1BEE6500006453CC /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				70BA02301C8DD33100C3A186 /* View */,
 				700A46951C7878E6004F2E72 /* TestVC01.h */,
 				700A46961C7878E6004F2E72 /* TestVC01.m */,
 				700A46981C7878F8004F2E72 /* TestVC01.xib */,
@@ -649,6 +675,7 @@
 				70735CF41C60ED0400614A19 /* NSTimer+Extension.m in Sources */,
 				C552E0551BEE6500006453CC /* GraphicTextMixedViewController.m in Sources */,
 				70854D241C5D188200B1DA26 /* AppSkin.m in Sources */,
+				70BA02361C8DD34000C3A186 /* DAReloadActivityButton.m in Sources */,
 				700A467B1C78646A004F2E72 /* HUDPOPTableViewController.m in Sources */,
 				70131AE51C82DD64001F51D7 /* UIView+Common.m in Sources */,
 				703CB0471C7965A200589DA0 /* DDTextField.m in Sources */,
@@ -660,6 +687,7 @@
 				708509061C56746C0039E403 /* UIView+DD.m in Sources */,
 				708509031C56746C0039E403 /* NSDate+Ext.m in Sources */,
 				7014E31F1C8499B500505F54 /* PasswordInputWindow.m in Sources */,
+				70BA02351C8DD34000C3A186 /* ActivityIndicatorBtnView.m in Sources */,
 				700A46911C787388004F2E72 /* NSObject+HudTipHandler.m in Sources */,
 				C552E0541BEE6500006453CC /* basicGraphicText.m in Sources */,
 				7060D72A1C5BC13D00EF0703 /* BaseNavcVC.m in Sources */,

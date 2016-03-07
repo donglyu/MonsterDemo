@@ -33,7 +33,7 @@
 #define kIsTest 0
 #endif
 
-//#define useSetBgColor
+#define useSetBgColor
 
 #ifndef useSetBgColor
 #define debugSetBgColor(...){}

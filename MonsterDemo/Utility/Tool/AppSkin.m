@@ -28,4 +28,15 @@
     return colorWithHex(EF5362);
 }
 
+
++ (UIColor *)commonThemeColor{
+    return colorWithHex(dea32c);
+}
+
+#pragma mark - UI
++ (void) customCommonUserInterface{
+
+
+}
+
 @end

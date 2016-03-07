@@ -23,6 +23,7 @@
 // 设置整个项目的item样式
 +(void)initialize{
     
+    // UIBarButtonItem
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     // key：NS****AttributeName
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
@@ -44,25 +45,23 @@
     // Do any additional setup after loading the view.
     UINavigationBar *navcBar = [UINavigationBar appearance];
     
-    [[UINavigationBar appearance ] setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+//    [navcBar setBackgroundColor:[AppSkin commonBtnColorWithLightRed]];
+    [navcBar setBackgroundImage:[UIImage imageWithColor:[AppSkin commonThemeColor]] forBarMetrics:UIBarMetricsDefault];
+    //返回按钮颜色.
     [navcBar setTintColor:[UIColor whiteColor]];
-    
+    navcBar.backIndicatorImage = [UIImage imageNamed:@"arrow"];
+    navcBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"arrow"];
 
-    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
-    //    [navigationBarAppearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:[NSObject baseURLStrIsTest]? @"0x3bbd79" : @"0x28303b"]] forBarMetrics:UIBarMetricsDefault];
-    
-    // navci
-    navigationBarAppearance.backIndicatorImage = [UIImage imageNamed:@"arrow"];
-    navigationBarAppearance.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"arrow"];
-    [navigationBarAppearance setTintColor:[UIColor whiteColor]];//返回按钮的箭头颜色
     NSDictionary *textAttributes = [self kNavTitleFontSize];
-    [navigationBarAppearance setTitleTextAttributes:textAttributes];
-    
-
+    [navcBar setTitleTextAttributes:textAttributes];
+    // 隐藏黑线
+    [navcBar setShadowImage:[[UIImage alloc] init]];
     //    // 光标
-    [[UITextField appearance] setTintColor:[AppSkin commonBtnColorWithLightRed]];//[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextField的光标颜色
-    [[UITextView appearance] setTintColor:[AppSkin commonBtnColorWithLightRed]];//[UIColor colorWithHexString:@"0x3bbc79"]];//设置UITextView的光标颜色
+    [[UITextField appearance] setTintColor:[AppSkin commonBtnColorWithLightRed]];
+    [[UITextView appearance] setTintColor:[AppSkin commonBtnColorWithLightRed]];
     
+    //导航栏标题样式
+//    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:Color_NavBarTitel, NSForegroundColorAttributeName, Font_NavBarTitel, NSFontAttributeName, nil]];
     
 }
 
