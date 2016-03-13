@@ -25,7 +25,7 @@
     
 
     [self addObjectWithTitle:@"图文混编" DestinationVCName:@"GraphicTextMixedViewController"];
-    [self addObjectWithTitle:@"*视图切换" DestinationVCName:@"DDMenuTableVC"];
+    [self addObjectWithTitle:@"*视图切换&Menu" DestinationVCName:@"DDMenuTableVC"];
     [self addObjectWithTitle:@"UIWindow" DestinationVCName:@"WindowLevelViewController"];
     [self addObjectWithTitle:@"XibUseViewController" DestinationVCName:@"XibUseViewController"];
     [self addObjectWithTitle:@"HUD效果" DestinationVCName:@"HUDPOPTableViewController"];

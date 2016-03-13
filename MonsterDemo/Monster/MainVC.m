@@ -13,6 +13,8 @@
 #import "ThirdTableVC.h"
 #import "FourthTableVC.h"
 
+#import "SYAppStart.h"
+
 @interface MainVC ()
 @property (nonatomic, strong) BaseNavcVC *navcViewController0;
 @property (nonatomic, strong) FirstTableVC *firstViewController;
@@ -27,11 +29,35 @@
 @property (nonatomic, strong) FourthTableVC *FourthViewController;
 @end
 
-@implementation MainVC
+@implementation MainVC{
+    BOOL _isFirstWillAppear;
+    BOOL _isFirstDidAppear;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self drawTabBarView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    if (!_isFirstWillAppear) {
+        _isFirstWillAppear = YES;
+    }
+    [[SYAppStart config] setResourceType:(SYAppStartResourceTypeImage)];
+//    [[SYAppStart config] setViewCustomBlock:^(UIView *rootView,UIView *imageContainerView,UIImageView *imageView){
+//        
+//    }];
+    [SYAppStart showWithImage:[UIImage imageNamed:@"750x1334"]];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    if (!_isFirstDidAppear) {
+        _isFirstDidAppear = YES;
+        [SYAppStart hide:YES afterDelay:0.5];
+    }
 }
 
 - (void)drawTabBarView{

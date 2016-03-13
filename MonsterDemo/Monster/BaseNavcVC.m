@@ -27,7 +27,7 @@
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     // key：NS****AttributeName
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSForegroundColorAttributeName] = [AppSkin commonBtnColorWithLightRed];
     textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
     [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     

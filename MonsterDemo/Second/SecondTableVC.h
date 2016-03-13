@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SecondTableVC : UITableViewController
+#import "DDTableViewController.h"
+@interface SecondTableVC :DDTableViewController
 
 @end

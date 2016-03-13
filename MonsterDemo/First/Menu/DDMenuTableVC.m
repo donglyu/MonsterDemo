@@ -9,31 +9,20 @@
 #import "DDMenuTableVC.h"
 
 @interface DDMenuTableVC ()
-@property (nonatomic, nonnull, strong) NSMutableArray *egsList;
+
 @end
 
 @implementation DDMenuTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-
+    [self addObjectWithTitle:@"DCPathMenu" DestinationVCName:@"DCPathMenu"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
 }
 
 /*
