@@ -40,7 +40,7 @@
         [self addSubview:indicatorView];
         _indicatorView = indicatorView;
         [indicatorView startAnimating];
-        DebugLog(@"startAnimating");
+        DLog(@"startAnimating");
         [indicatorView stopAnimating];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

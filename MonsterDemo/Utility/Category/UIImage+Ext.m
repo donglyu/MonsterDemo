@@ -103,7 +103,7 @@
     [sourceImage drawInRect:CGRectMake(0, 0, ceilf(targetWidth), ceilf(targetHeight))];
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     if(newImage == nil){
-        DebugLog(@"could not scale image");
+        DLog(@"could not scale image");
         newImage = sourceImage;
     }
     UIGraphicsEndImageContext();
@@ -161,7 +161,7 @@
 
 - (void)saveImageToPath:(NSString*)fileFullPath {
     BOOL result = [UIImageJPEGRepresentation(self, 1) writeToFile:fileFullPath atomically:YES];
-    DebugLog(@"图片保存ok? %d", result);
+    DLog(@"图片保存ok? %d", result);
 }
 
 

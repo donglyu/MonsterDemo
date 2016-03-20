@@ -26,6 +26,7 @@
     [self addObjectWithTitle:@"临时实验" DestinationVCName:@"TestVC01"];
     [self addObjectWithTitle:@"临时实验2" DestinationVCName:@"TestVC02"];
     [self addObjectWithTitle:@"scrollView内容截图" DestinationVCName:@"ScreenShootScrollView"];
+    [self addObjectWithTitle:@"不知图片高度, 如何调整排版[Masonry应用]" DestinationVCName:@"DnotKonwHeigthOfPhotoController"];
     self.tableView.tableFooterView = [UIView new];
     
     

@@ -25,11 +25,11 @@
 
 // 功能
 #ifndef __OPTIMIZE__
-#define DebugLog(...) NSLog(__VA_ARGS__)
+#define DLog(...) NSLog(__VA_ARGS__)
 #import "TestVC01.h"
 #define kIsTest 1
 #else
-#define DebugLog(...){}
+#define DLog(...){}
 #define kIsTest 0
 #endif
 

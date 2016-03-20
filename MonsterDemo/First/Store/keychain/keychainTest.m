@@ -33,7 +33,7 @@
     NSString *objectString = @"test.....kkkkkkey";
     NSError *error;
     [SFHFKeychainUtils storeUsername:@"dd" andPassword:objectString forServiceName:kKeyChainSeviceName updateExisting:YES error:&error];
-    DebugLog(@"store 完成");
+    DLog(@"store 完成");
 }
 
 - (IBAction)getUserInfo:(id)sender {
@@ -41,10 +41,10 @@
     NSError *error;
     NSString *pwd = [SFHFKeychainUtils getPasswordForUsername:@"dd" andServiceName:kKeyChainSeviceName error:&error];
     if (error) {
-        DebugLog(@"error:%@ %@", error, error.localizedDescription);
+        DLog(@"error:%@ %@", error, error.localizedDescription);
     }
     
-    DebugLog(@"pwd: %@", pwd);
+    DLog(@"pwd: %@", pwd);
     
 }
 

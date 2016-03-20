@@ -16,7 +16,7 @@
     }
       __unsafe_unretained Class toClass =  NSClassFromString(viewClassStr);
     if (!toClass){
-        DebugLog(@"popToAssignedViewController view class do not exist!");
+        DLog(@"popToAssignedViewController view class do not exist!");
         return;
     }
     
@@ -29,7 +29,7 @@
     }
     
     if (!isFound) {
-        DebugLog(@"当前navigationctrler.viewctrlers中 无此viewcontroller %@", viewClassStr);
+        DLog(@"当前navigationctrler.viewctrlers中 无此viewcontroller %@", viewClassStr);
     }
 }
 

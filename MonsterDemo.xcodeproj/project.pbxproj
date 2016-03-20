@@ -103,6 +103,7 @@
 		70BA02361C8DD34000C3A186 /* DAReloadActivityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BA02341C8DD34000C3A186 /* DAReloadActivityButton.m */; };
 		70BE95281C74BE430024D23F /* WindowLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BE95261C74BE430024D23F /* WindowLevelViewController.m */; };
 		70BE95291C74BE430024D23F /* WindowLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BE95271C74BE430024D23F /* WindowLevelViewController.xib */; };
+		70FE89CD1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FE89CC1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.m */; };
 		C552E04F1BEE6500006453CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C552E0321BEE6500006453CC /* Assets.xcassets */; };
 		C552E0501BEE6500006453CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C552E0331BEE6500006453CC /* LaunchScreen.storyboard */; };
 		C552E0531BEE6500006453CC /* FirstTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C552E03B1BEE6500006453CC /* FirstTableVC.m */; };
@@ -275,6 +276,8 @@
 		70BE95251C74BE430024D23F /* WindowLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowLevelViewController.h; sourceTree = "<group>"; };
 		70BE95261C74BE430024D23F /* WindowLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowLevelViewController.m; sourceTree = "<group>"; };
 		70BE95271C74BE430024D23F /* WindowLevelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowLevelViewController.xib; sourceTree = "<group>"; };
+		70FE89CB1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DnotKonwHeigthOfPhotoController.h; sourceTree = "<group>"; };
+		70FE89CC1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DnotKonwHeigthOfPhotoController.m; sourceTree = "<group>"; };
 		C552E0321BEE6500006453CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C552E0341BEE6500006453CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C552E03A1BEE6500006453CC /* FirstTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableVC.h; sourceTree = "<group>"; };
@@ -532,6 +535,7 @@
 		706CBD6E1C625AB60074F240 /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
+				70FE89CA1C9D9E4200491550 /* DontKonwHeightOfPhoto */,
 				708ACE651C8C2F77006B3763 /* Views */,
 				70131AE61C82DD99001F51D7 /* ScreenShoot */,
 				706CBD6F1C625AD70074F240 /* FourthTableVC.h */,
@@ -656,6 +660,15 @@
 				70BE95271C74BE430024D23F /* WindowLevelViewController.xib */,
 			);
 			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		70FE89CA1C9D9E4200491550 /* DontKonwHeightOfPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				70FE89CB1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.h */,
+				70FE89CC1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.m */,
+			);
+			path = DontKonwHeightOfPhoto;
 			sourceTree = "<group>";
 		};
 		BB019DF7AD06C42669DBB42D /* Frameworks */ = {
@@ -940,6 +953,7 @@
 				7010D92B1C954536001F2A4A /* BHBBottomBar.m in Sources */,
 				700A466C1C78398C004F2E72 /* Time.m in Sources */,
 				70735D0D1C610B0500614A19 /* DDMenuTableVC.m in Sources */,
+				70FE89CD1C9D9E6600491550 /* DnotKonwHeigthOfPhotoController.m in Sources */,
 				708509021C56746C0039E403 /* NSArray+Log.m in Sources */,
 				708509061C56746C0039E403 /* UIView+DD.m in Sources */,
 				708509031C56746C0039E403 /* NSDate+Ext.m in Sources */,
