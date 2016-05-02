@@ -2,6 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>3DTouch第一个按钮</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.lyds.Monster.3DFirst</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.lyds.Monster.3DSecond</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>按钮2</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>副标题</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.lyds.Monster.3DThird</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>按钮3</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>副标题</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

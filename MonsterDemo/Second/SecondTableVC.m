@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addObjectWithTitle:@"微博发布弹动画" DestinationVCName:@"WeiboAnimation"];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

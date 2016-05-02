@@ -32,12 +32,12 @@
     [self.window makeKeyAndVisible];
     
     
+    
     // 版本控制
     // NSUserDeafualt
 //    NSString *key = @"CFBundleVersion";
 //    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:key];
 //    NSString *currentVertion = [NSBundle mainBundle].infoDictionary[key];
-    
     
 //    [[NSUserDefaults standardUserDefaults] setObject:currentVertion forKey:key];
 //    [[NSUserDefaults standardUserDefaults] synchronize]; // 同步
@@ -67,6 +67,37 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// 3d
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    MainVC *tbVC = [[MainVC alloc] init];
+    //    NavcViewController *Navc = [[NavcViewController alloc] initWithRootViewController:tbVC];
+    
+    
+    self.window.rootViewController = tbVC;
+    tbVC.view.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    //判断先前我们设置的快捷选项标签唯一标识，根据不同标识执行不同操作
+    if([shortcutItem.type isEqualToString:@"com.lyds.Monster.3DFirst"]){
+        NSArray *arr = @[@"hello 3D Touch"];
+        UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:arr applicationActivities:nil];
+        [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+        }];
+    } else if ([shortcutItem.type isEqualToString:@"com.lyds.Monster.3DSecond"]) {//进入搜索界面
+        [tbVC setSelectedIndex:2];
+    } else if ([shortcutItem.type isEqualToString:@"com.lyds.Monster.3DThird"]) {//进入分享界面
+        [tbVC setSelectedIndex:3];
+    }
+    
+    if (completionHandler) {
+        completionHandler(YES);
+    }
 }
 
 @end

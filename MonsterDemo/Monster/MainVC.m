@@ -109,6 +109,21 @@
     
     self.navigationItem.backBarButtonItem.title = @"返回";
 
+    float version = [[[UIDevice currentDevice] systemVersion] floatValue];
+    
+    // 在iOS 8中想要设置applicationBadgeNumber, 需要用户的授权
+    if (version >= 8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    }
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    // application.applicationIconBadgeNumber＝0写在didFinishLaunchingWithOptions每次启动应用程序，
+    //使应用图标上数字标记都会变为0的，是不会显示的。数字标记显示多少是服务器端推送过来时给的。
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

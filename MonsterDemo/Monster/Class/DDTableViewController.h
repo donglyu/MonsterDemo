@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ExampleCellItem;
 @interface DDTableViewController : UITableViewController
-@property (nonatomic, nonnull, strong) NSMutableArray *egsList;
+@property (nonatomic, nullable, strong) NSMutableArray < ExampleCellItem *> *egsList;
 
-- (void)addObjectWithTitle:(NSString*)egTitle DestinationVCName:(NSString*)vcName;
+
+
+- (void)addObjectWithTitle:(nullable NSString *)egTitle DestinationVCName:(nullable NSString *)vcName;
 
 @end
